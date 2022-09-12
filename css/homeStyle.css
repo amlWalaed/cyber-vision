@@ -358,6 +358,7 @@ nav .links.open li a:hover , nav .links.open li a.active{
     width: 100%;
     min-height: 280px;
 }
+
 .yeelight .content .images .img-box a > p {
     color: white;
     position: absolute;
@@ -404,7 +405,7 @@ nav .links.open li a:hover , nav .links.open li a.active{
 }
 @media (max-width:767px){
     .yeelight .content .images .img-box{
-        width: calc((100% / 2 ) - 20px);
+        width: 100%;
     }
 }
 .contact-us{
@@ -460,6 +461,7 @@ nav .links.open li a:hover , nav .links.open li a.active{
 @media (max-width:991px){
     .contact-us .content form{
         width: 70%;
+        top:-30px;
     } 
 }
 @media(max-width:767px){
@@ -557,9 +559,18 @@ nav .links.open li a:hover , nav .links.open li a.active{
     .what-introduce .content .boxes-content .box-description .description h3 ,
     .what-introduce .content .boxes-content .box-description .img-description{
         text-align: center;
+        margin-top: 30px;
     }
     .what-introduce .content .boxes-content .box-description .img-description img{
         width: 100%;
+    }
+}
+@media (max-width:567px){
+    .what-introduce{
+        margin-bottom: 75px;
+    }
+    .what-introduce .content .boxes{
+        flex-wrap: wrap;
     }
 }
 .last-news{
@@ -713,6 +724,7 @@ footer .content .news button{
     left: 0;
     width: 20%;
     text-align: center;
+    border: none;
 }
 footer .content .news input:focus{
     border: 1px solid var(--main-color);
