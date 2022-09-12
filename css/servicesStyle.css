@@ -1,0 +1,24 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    direction: rtl;
+    text-align: right;
+    
+}
+.details {
+    padding: 85px 0;
+}
+.details .content{
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+}
+.details .content p{
+    margin-top: 30px;
+    margin-bottom: 0;
+    line-height: 1.9;
+
+}

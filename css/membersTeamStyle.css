@@ -1,0 +1,46 @@
+:root{
+    --main-color:#0094d9;
+}
+.team-members{
+ margin: 50px 0;
+}
+.team-members p{
+    text-align: center;
+    padding: 0px 0 35px;
+    margin-bottom: 0;
+}
+.team-members .card-deck{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.team-members .card-deck .card{
+    width: calc((100% / 4 ) - 40px);
+    position: relative;
+    margin-bottom: 70px;
+}
+.team-members .card-deck .card img{
+    min-height: 250px;
+}
+.team-members .card-deck .card .card-body{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    bottom: -40px;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    box-shadow:-1px 9px 20px 0px #aaa;
+}
+.team-members .card-deck .card .card-body span:last-child{
+    color: var(--main-color);
+    font-weight: bold;
+}
+@media (max-width: 991px){
+    .team-members .card-deck .card{
+        width: calc((100% / 2) - 20px);
+    }
+}

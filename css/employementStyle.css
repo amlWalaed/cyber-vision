@@ -1,0 +1,128 @@
+:root{
+    --form-color:#f3f3f3;
+    --border-color:#d6d6d6;
+}
+.form-apply{
+    padding: 25px 0;
+    margin-bottom: 80px;
+}
+.form-apply h3{
+    padding: 35px;
+}
+.form-apply form{
+    background-color: var(--form-color);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.form-apply form label{
+    font-weight: 600;
+    padding: 20px 0;
+}.form-apply form .dropdown-list{
+    position: relative;
+    min-height: 60px;
+}
+.form-apply form .dropdown-list select{
+    background-color: var(--form-color);
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    appearance: none;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    z-index: 2;
+}
+.form-apply form div span{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: var(--border-color);
+    cursor: pointer;
+    z-index: 3;
+}
+.form-apply form select:focus{
+    outline: none;
+}
+.form-apply form input{
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    background-color: var(--form-color);
+}
+
+.form-apply form input::placeholder{
+    color: var(--border-color);
+}
+.form-apply form input:focus{
+    outline: none;
+}
+.form-apply form .full-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form-apply form .full-name div{
+    width: calc((100% / 3) - 30px);
+    margin-left: 10px;
+}
+.form-apply form .full-name div label{
+    display: block;
+}
+.form-apply form div{
+position: relative;
+}
+.form-apply form div input{
+    width: 100%;
+    z-index: 1;
+}
+/* customize file input */
+.form-apply form input[type="file"]{
+    display: none;
+}
+.form-apply form .file-upload{
+    color: var(--border-color);
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    background-color: var(--form-color);
+    
+}
+/* customize file input */
+
+.form-apply form button{
+    border: none;
+    color: white;
+    background-color: var(--main-color);
+    width: 80%;
+    margin: 35px auto;
+    padding: 10px;
+    border-radius: 7px;
+}
+input[type="date"]{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    opacity: 1;
+}
+
+/* input[type="date"]::-webkit-calendar-picker-indicator { 
+    position: absolute;
+} */
